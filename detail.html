@@ -5,13 +5,31 @@
     </head>
     <div>
     <div>
-        <img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="150px" width="200px">
+        <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\index.html"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="150px" width="200px"></a>
         <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_blank">Login</a>
     </div>
     <div>
         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson">
         <div>
-            <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\payment.html">Book now</a>
+            <form action="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\payment.html">
+                <label for="adults">Adults: </label>
+                <input type="number" id="adults" min="1" name="adults" required>
+                <br>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="from">From Date: </label>
+                <input type="date" id="from" name="from" required>
+                <br>
+                <label for="to">To Date: </label>
+                <input type="date" id="to" name="to" required>
+                <br>
+                <label for="total">Total: </label>
+                <input type="text" id="total" name="total" disabled="true">
+                <br>
+                <label for="booknow"></label>
+                <input type="submit" value="Book now">
+            </form>
         </div>
         <h2>Radisson Blu Hotel</h2>
         <p>RATING</p>
