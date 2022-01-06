@@ -2,43 +2,64 @@
 <html>
     <head>
         <title>List</title>
+        <style>
+            html, body{
+                position: relative;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+            .list{
+                scroll-behavior: smooth;
+            }
+            .map{
+                scroll-behavior: smooth;
+            }
+
+        </style>
     </head>
     <div>
+        <div id="header">
         <div>
-            <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\index.html"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="150px" width="200px"></a>
+            <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\index.html"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="60px" width="60px"></a>
             <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_blank">Login</a>
         </div>
-        <div>
+        <div id="view">
         <ul>
-            <li><a href="#" target="_self">List View</a></li>
-            <li><a href="#" target="_self">Map View</a></li>
+            <li><a class="list" href="#list-view" target="_self">List View</a></li>
+            <li><a class="map" href="#map-view" target="_self">Map View</a></li>
         </ul>
         </div>
+        </div>
+        <div id="body">
         <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\detail.html" target="_self">
-        <div>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson">
+        <div id="list-view">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" height="200px" width="250px">
             <h3>Radisson Blue Hotel</h3>
             <p>5 Star</p>
             <p>New Delhi</p>
         </div>
         </a>
-        <div>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="lalit">
+        <div id="list-view">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="lalit" height="200px" width="250px">
             <h3>The Lalit New Delhi</h3>
             <p>4.5 Star</p>
             <p>New Delhi</p>
         </div>
-        <div>
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj">
+        <div id="list-view">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj" height="200px" width="250px">
             <h3>Taj Palace</h3>
             <p>4.0 Star</p>
             <p>New Delhi</p>
         </div>
-        <div>
+        <div id="map-view">
             <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map">
             <p>MAP VIEW</p>
         </div>
+        </div>
         
+        <div id="footer">
         <div>
             <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\contact.html" target="_blank">Contact Us</a>
         </div>
@@ -49,6 +70,7 @@
         </div>
         <div>
             <a>&#169; 2020 ROOM SEARCH PVT. LTD.</a>
+        </div>
         </div>
     </div>
 </html>
