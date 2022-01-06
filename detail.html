@@ -9,6 +9,23 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
+                margin: 0;
+                background-color: #e0e0e0;
+            }
+            #header{
+                background-color: rosybrown;
+            }
+            #footer{
+                background-color: rosybrown;
+            }
+            .radisson{
+                margin: 2% 4% 0% 4%;
+            }
+            #bookingform{
+                margin: 0% 4% 1% 4%;
+            }
+            #description{
+                margin: 1% 4% 2% 4%;
             }
         </style>
     </head>
@@ -18,14 +35,14 @@
         <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_blank">Login</a>
     </div>
     <div id="body">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" height="500px" width="500px">
-        <div>
+        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" class="radisson" height="500px" width="500px">
+        <div id="bookingform">
             <form action="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\payment.html">
                 <label for="adults">Adults: </label>
                 <input type="number" id="adults" min="1" name="adults" required>
                 <br>
                 <label for="name">Name: </label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required autocomplete="off">
                 <br>
                 <label for="from">From Date: </label>
                 <input type="date" id="from" name="from" required>
@@ -40,6 +57,7 @@
                 <input type="submit" value="Book now">
             </form>
         </div>
+        <div id="description">
         <h2>Radisson Blu Hotel</h2>
         <p>RATING</p>
         <p>5 Star</p>
@@ -53,6 +71,7 @@
         </ul>
         <h5>DESCRIPTION</h5>
         <p>I am Ukshit Suvarna. I am a Mechanical Engineer.</p>
+        </div>
     </div>
     <div id="footer">
     <div>
