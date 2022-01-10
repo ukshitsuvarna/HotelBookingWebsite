@@ -1,0 +1,96 @@
+html, body{
+    position: relative;
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif ;
+}
+
+#header{
+    background-color: rosybrown;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    margin: auto;
+}
+
+.login{
+    float: right;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#view{
+    text-align: center;
+}
+
+ul#list-inline li{
+    display: inline;
+    
+}
+
+.list{
+    scroll-behavior: smooth;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.map{
+    /*scroll-behavior: smooth;*/
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.row-flexing{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+
+#list-view{
+    margin: 30px;
+    margin-left: 60px;
+    width: 40%;
+    background-color: rgb(132,136,139);
+}
+
+.radisson{
+    text-decoration: none;
+    color: black;
+}
+
+#footer{
+    background-color: rosybrown;
+    overflow: hidden;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+}
+
+.contactus{
+    float: left;
+    padding: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+#social-media{
+    float: right;
+    padding: 22px;
+}
+
+#copy{
+    font-size: 10px;
+    text-align: center;
+    padding-top: 50px;
+}

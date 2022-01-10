@@ -1,0 +1,63 @@
+html, body{
+    position: relative;
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: 'Ubuntu', sans-serif ;
+}
+
+#header{
+    background-color: rosybrown;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    margin: auto;
+}
+
+.login{
+    float: right;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.radisson{
+    margin: 2% 4% 0% 4%;
+}
+
+#bookingform{
+    margin: 0% 4% 1% 4%;
+}
+
+#description{
+    margin: 1% 4% 2% 4%;
+}
+
+#footer{
+    background-color: rosybrown;
+    overflow: hidden;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+}
+
+.contactus{
+    float: left;
+    padding: 22px;
+    text-decoration: none;
+    color: black;
+}
+
+#social-media{
+    float: right;
+    padding: 22px;
+}
+
+#copy{
+    font-size: 10px;
+    text-align: center;
+    padding-top: 50px;
+}

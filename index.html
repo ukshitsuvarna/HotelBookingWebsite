@@ -2,77 +2,54 @@
 <html>
     <head>
         <title>Index</title>
-        <style>
-            html, body{
-                position: relative;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: 0;
-                background-color: #e0e0e0;
-            }
-            #header{
-                background-color: rosybrown;
-            }
-            #footer{
-                background-color: rosybrown;
-            }
-            header{
-                background-image: url('https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg');
-                height: 380px;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-            #place{
-                position: relative;
-                margin-left: 15%;
-                margin-right: 15%;
-                display: flex;
-                justify-content: space-between;
-                padding: 4%;
-            }
-            .rounded-corners{
-                border-radius: 4%;
-            }
-            
-
-        </style>
+        <link rel="stylesheet" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\styles\index.css">
+        <link rel="stylesheet" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\styles\fontstyle.css">
     </head>
-    <div>
-        <div id="header">
-        <img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="60px" width="60px">
-        <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_self">Login</a>
-        </div>
+
+
+<div>
+    <div id="header">
+        <img class="logo" src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="60px" width="60px">
+        <a class="login" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_self">Login</a>
+    </div>
         
-        <div id="body">
+
+    <div id="body">
         <header>
-        <input type="search" placeholder="City">
+        <input class="searchbar" type="search" placeholder="City">
         </header>
-        <div id="place">
-        <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\list.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="new-delhi" class="rounded-corners" width="150px" height="150px"></a>
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa" class="rounded-corners" width="150px" height="150px">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="hyderabad" class="rounded-corners" width="150px" height="150px">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkata" class="rounded-corners" width="150px" height="150px">
-        </div>
-        <div>
-        <a href="#" target="_self">View more>></a>
-        </div>
-        </div>
+
+
+    <div id="place">
+        <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\list.html">
+        <img class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="new-delhi" width="150px" height="150px">
+        </a>
+        <img class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa" width="150px" height="150px">
+        <img class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="hyderabad" width="150px" height="150px">
+        <img class="rounded-corners" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="kolkata" width="150px" height="150px">
+    </div>
+
+
+    <div id="centering-view-more">
+        <a id="view-more" href="#" target="_self">View more>></a>
+    </div>
+    </div>
         
-        <div id="footer">
-        <div>
-        <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\contact.html" target="_self">Contact Us</a>
-        </div>
-        <div>
-            <a href="https://www.facebook.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\facebook.png" alt="facebook" width="22px" height="20px"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\instagram.png" alt="instagram" width="22px" height="20px"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\twitter.png" alt="twitter" width="22px" height="20px"></a>
-        </div>
-        <div>
-            <a>&#169; 2020 ROOM SEARCH PVT. LTD.</a>
-        </div>
+
+    <div id="footer">
+            <div id="contact-us">
+                <a class="contactus" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\contact.html" target="_self">Contact Us</a>
+            </div>
+
+            <div id="social-media">
+                <a class="social" href="https://www.facebook.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\facebook.png" alt="facebook" width="22px" height="20px"></a>
+                <a class="social" href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\instagram.png" alt="instagram" width="22px" height="20px"></a>
+                <a class="social" href="https://twitter.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\twitter.png" alt="twitter" width="22px" height="20px"></a>
+            </div>
+
+        <div id="copy">
+            <a class="copyright">&#169; 2020 ROOM SEARCH PVT. LTD.</a>
         </div>
     </div>
+</div>
 </html>

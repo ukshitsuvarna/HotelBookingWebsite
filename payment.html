@@ -2,82 +2,56 @@
 <html>
     <head>
         <title>Payment</title>
-        <style>
-            html, body{
-                position: relative;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: 0;
-                background-color: #e0e0e0;
-            }
-            #header{
-                background-color: rosybrown;
-            }
-            #footer{
-                background-color: rosybrown;
-            }
-            #hotel{
-                background-color: rgb(132,136,139);
-                width: 50%;
-                height: 20%;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 2%;
-                margin-bottom: 2%;
-            }
-            #information{
-                margin: 2% 2% 2% 2%;
-            }
-            #tariff{
-                margin: 2% 2% 2% 2%;
-                border: 1px solid black;
-                border-radius: 5px;
-                padding: 1% 2% 1% 2%;
-            }
-
-        </style>
+        <link rel="stylesheet" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\styles\payment.css">
+        <link rel="stylesheet" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\styles\fontstyle.css">
     </head>
-    <div>
-        <div id="header">
-            <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\index.html"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="60px" width="60px"></a>
-            <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_blank">Login</a>
-        </div>
-        <div id="body">
-            <div id="hotel">
+<div>
+    <div id="header">
+        <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\index.html">
+            <img class="logo" src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="60px" width="60px">
+        </a>
+        <a class="login" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_blank">Login</a>
+    </div>
+
+    <div id="body">
+        <div id="hotel">
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" height="500px" width="500px">
             <h2>Radisson Blu Hotel</h2>
             <p>#38 of 1,289hotels in New Delhi</p>
             <p>National Highway 8, New Delhi 110017 India</p>
-            </div>
-            <div id="information">
+        </div>
+
+        <div id="information">
             <p><b>Name:</b> John Doe</p>
             <p><b>Number of Adults:</b> 2</p>
             <p><b>Check-in Date:</b> 06/06/2020</p>
             <p><b>Check-out Date:</b> 08/06/2020</p>
-            </div>
-            <div id="tariff">
+        </div>
+
+        <div id="tariff">
             <p><b>Tariff Breakdown:</b> Rs.1000 x 2 Adults x 5 Nights</p>
             <p><b>Total Amount:</b> Rs.10000</p>
-            </div>
-            <div>
-                <a href="#" target="_self">Pay Now</a>
-            </div>
         </div>
-        <div id="footer">
-        <div>
-            <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\contact.html" target="_blank">Contact Us</a>
-        </div>
-        <div>
-            <a href="https://www.facebook.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\facebook.png" alt="facebook" width="22px" height="20px"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\instagram.png" alt="instagram" width="22px" height="20px"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\twitter.png" alt="twitter" width="22px" height="20px"></a>
-        </div>
-        <div>
-            <a>&#169; 2020 ROOM SEARCH PVT. LTD.</a>
-        </div>
+
+        <div id="pay">
+            <a class="pay-now" href="#" target="_self">Pay Now</a>
         </div>
     </div>
+
+    <div id="footer">
+        <div id="contact-us">
+            <a class="contactus" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\contact.html" target="_blank">Contact Us</a>
+        </div>
+
+        <div id="social-media">
+            <a class="social" href="https://www.facebook.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\facebook.png" alt="facebook" width="22px" height="20px"></a>
+            <a class="social" href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\instagram.png" alt="instagram" width="22px" height="20px"></a>
+            <a class="social" href="https://twitter.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\twitter.png" alt="twitter" width="22px" height="20px"></a>
+        </div>
+
+        <div id="copy">
+            <a class="copyright">&#169; 2020 ROOM SEARCH PVT. LTD.</a>
+        </div>
+    </div>
+</div>
 </html>
