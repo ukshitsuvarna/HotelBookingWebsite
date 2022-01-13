@@ -1,11 +1,13 @@
 html, body{
-    position: relative;
     margin: 0;
     background-color: #e0e0e0;
     font-family: 'Ubuntu', sans-serif ;
 }
 
 #header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: rosybrown;
     overflow: hidden;
     position: fixed;
@@ -13,15 +15,20 @@ html, body{
     width: 100%;
 }
 .logo{
-    margin: auto;
+    margin-top: 5px;
+    margin-left: 1%;
 }
 .login{
     float: right;
+    margin-right: 2%;
     padding: 25px;
     text-decoration: none;
     color: black;
 }
 #body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 63px;
     margin-bottom: 75px;
 }
@@ -40,22 +47,60 @@ header{
     top: 50%;
     left: 36%;
     border: 1px solid #f1f1f1;
+    outline: none;
     padding: 10px;
     font-size: 16px;
     border-radius: 12px;
 }
 
 #place{
-    position: relative;
-    margin-left: 15%;
-    margin-right: 15%;
     display: flex;
-    justify-content: space-between;
-    padding: 4%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#delhi{
+    position: relative;
+}
+#goa{
+    position: relative;
+}
+#hyderabad{
+    position: relative;
+}
+#kolkata{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    padding: 45% 0;
+    border-radius: 25%;
+    text-align: center;
+}
+#delhi:hover .overlay{
+    opacity: 1;
+}
+#goa:hover .overlay{
+    opacity: 1;
+}
+#hyderabad:hover .overlay{
+    opacity: 1;
+}
+#kolkata:hover .overlay{
+    opacity: 1;
 }
 
 .rounded-corners{
-    border-radius: 4%;
+    border-radius: 25%;
+    box-shadow: 10px 10px 5px grey;
 }
 
 #centering-view-more{
@@ -66,11 +111,14 @@ header{
 #view-more{
     text-decoration: none;
     color: black;
-    
-
 }
 
 #footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
     background-color: rosybrown;
     position: fixed;
     bottom: 0;
@@ -78,19 +126,21 @@ header{
 }
 
 .contactus{
-    float: left;
-    padding: 22px;
     text-decoration: none;
     color: black;
 }
 
+#contact-us{
+    order: 1;
+    margin-left: 1%;
+}
+
 #social-media{
-    float: right;
-    padding: 22px;
+    order: 3;
+    margin-right: 2%;
 }
 
 #copy{
+    order: 2;
     font-size: 10px;
-    text-align: center;
-    padding-top: 50px;
 }

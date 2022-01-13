@@ -8,41 +8,65 @@
 <div>
 
     <div id="header">
-        <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\index.html">
-            <img class="logo" src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="60px" width="60px">
-        </a>
-        <a class="login" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_blank">Login</a>
+        <div>
+            <a href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\index.html">
+                <img class="logo" src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\logo.png" alt="logo" height="60px" width="60px">
+            </a>
+        </div>
+        <div>
+            <a class="login" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_blank">Login</a>
+        </div>
     </div>
 
     <div id="body">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" class="radisson" height="500px" width="500px">
-        <div id="bookingform">
-            <form action="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\payment.html">
-                <label for="adults">Adults: </label>
-                <input type="number" id="adults" min="1" name="adults" required>
-                <br>
-                <label for="name">Name: </label>
-                <input type="text" id="name" name="name" required autocomplete="off">
-                <br>
-                <label for="from">From Date: </label>
-                <input type="date" id="from" name="from" required>
-                <br>
-                <label for="to">To Date: </label>
-                <input type="date" id="to" name="to" required>
-                <br>
-                <label for="total">Total: </label>
-                <input type="text" id="total" name="total" disabled="true">
-                <br>
-                <label for="booknow"></label>
-                <input type="submit" value="Book now">
-            </form>
+    <div id="box-padding">
+        <div id="form-flexbox">
+            <div id="image-flexbox">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" class="radisson" height="350px" width="500px">
+            </div>
+            <div id="bookingform">
+                <form action="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\payment.html">
+                    <ul class="flex-outer">
+                        <li>
+                            <label for="adults">Adults: </label>
+                            <input type="number" id="adults" min="1" name="adults" required>
+                        </li>
+                    <br>
+                        <li>
+                            <label for="name">Name: </label>
+                            <input type="text" id="name" name="name" required autocomplete="off">
+                        </li>
+                    <br>
+                        <li>
+                            <label for="from">From Date: </label>
+                            <input type="date" id="from" name="from" required>
+                        </li>
+                    <br>
+                        <li>
+                            <label for="to">To Date: </label>
+                            <input type="date" id="to" name="to" required>
+                        </li>
+                    <br>
+                        <li>
+                            <label for="total">Total: </label>
+                            <input type="text" id="total" name="total" disabled="true">
+                        </li>
+                    <br>
+                        <div id="button-position">
+                            <label for="booknow"></label>
+                            <input class="button-style" type="submit" value="Book Now">
+                        </div>
+                    </ul>
+                </form>
+            </div>
         </div>
+    </div>
 
-        <div id="description">
+    <div id="description">
         <h2>Radisson Blu Hotel</h2>
-        <p>RATING</p>
-        <p>5 Star</p>
-        <p>AMENITIES</p>
+        <p class="description-style">RATING</p>
+        <p class="description-style">5 Star</p>
+        <p class="description-style">AMENITIES</p>
         <ul>
             <li>Room service</li>
             <li>Restaurant</li>
@@ -50,24 +74,23 @@
             <li>Fitness center</li>
             <li>Pool</li>
         </ul>
-        <h5>DESCRIPTION</h5>
+        <h5 class="description-style">DESCRIPTION</h5>
         <p>I am Ukshit Suvarna. I am a Mechanical Engineer.</p>
-        </div>
     </div>
 
     <div id="footer">
         <div id="contact-us">
-        <a class="contactus" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\contact.html" target="_blank">Contact Us</a>
+            <a class="contactus" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\contact.html" target="_blank">Contact Us</a>
         </div>
 
         <div id="social-media">
-        <a class="social" href="https://www.facebook.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\facebook.png" alt="facebook" width="22px" height="20px"></a>
-        <a class="social" href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\instagram.png" alt="instagram" width="22px" height="20px"></a>
-        <a class="social" href="https://twitter.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\twitter.png" alt="twitter" width="22px" height="20px"></a>
+            <a class="social" href="https://www.facebook.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\facebook.png" alt="facebook" width="22px" height="20px"></a>
+            <a class="social" href="https://www.instagram.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\instagram.png" alt="instagram" width="22px" height="20px"></a>
+            <a class="social" href="https://twitter.com/" target="_blank"><img src="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\assests\images\twitter.png" alt="twitter" width="22px" height="20px"></a>
         </div>
 
         <div id="copy">
-        <a class="copyright">&#169; 2020 ROOM SEARCH PVT. LTD.</a>
+            <a class="copyright">&#169; 2020 ROOM SEARCH PVT. LTD.</a>
         </div>
     </div>
 </div>
