@@ -4,6 +4,9 @@
         <title>Detail</title>
         <link rel="stylesheet" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\styles\detail.css">
         <link rel="stylesheet" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\styles\fontstyle.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     </head>
 <div>
 
@@ -14,7 +17,46 @@
             </a>
         </div>
         <div>
-            <a class="login" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\login.html" target="_blank">Login</a>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#log-in-modal" id="log-in-button">Login</button>
+        </div>
+        <div class="modal fade" id="log-in-modal" tabindex="-1" aria-labelledby="example-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModelLabel">Please Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="modal-centering">
+                            <div class="login-mb-3">
+                                <div class="label-table-cell">
+                                    <label for="example-input-username" class="form-label">Username:</label>
+                                </div>
+                                <div class="input-table-cell">
+                                    <input type="text" class="form-control" id="example-input-username" placeholder="Enter Username" aria-describedby="usernameHelp">
+                                </div>
+                            </div>
+                            <div class="login-mb-3">
+                                <div class="label-table-cell">
+                                    <label for="example-input-password" class="form-label">Password:</label>
+                                </div>
+                                <div class="input-table-cell">
+                                    <div class="password-input-styling">
+                                        <input type="password" class="form-control" placeholder="Password" id="example-input-password">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col text-center">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -54,7 +96,7 @@
                     <br>
                         <div id="button-position">
                             <label for="booknow"></label>
-                            <input class="button-style" type="submit" value="Book Now">
+                            <input type="submit" class="btn btn-outline-success" value="Book Now">
                         </div>
                     </ul>
                 </form>
@@ -79,8 +121,41 @@
     </div>
 
     <div id="footer">
-        <div id="contact-us">
-            <a class="contactus" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\contact.html" target="_blank">Contact Us</a>
+        <div id="button-placement">
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#contact-us-modal" id="contact-us-button">Contact Us</button>
+        </div>
+        <div class="modal fade" id="contact-us-modal" tabindex="-1" aria-labelledby="example-modal-label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModelLabel">Get in touch</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Thank you for reaching out!!!
+                            <br>
+                            Please enter your email and we will get back to you.
+                        </p>
+                        <form>
+                            <div class="contact-us-mb-3">
+                                <div class="contact-us-label">
+                                    <label for="example-input-username" class="form-label">Email:</label>
+                                </div>
+                                <div class="contact-us-input">
+                                    <input type="text" class="form-control" id="example-input-username" placeholder="Enter your email id" aria-describedby="usernameHelp">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="social-media">

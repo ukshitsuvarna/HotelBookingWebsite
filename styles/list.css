@@ -13,24 +13,45 @@ html, body{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1051;
 }
 .logo{
     margin-top: 5px;
     margin-left: 1%;
 }
-.login{
+#log-in-button{
     float: right;
-    margin-right: 2%;
-    padding: 25px;
-    text-decoration: none;
+    margin: 15px;
+    background-color: white;
     color: black;
+    border-color: white;
+}
+#modal-centering{
+    padding: 0 30px;
+}
+.login-mb-3{
+    display: inline-table;
+    padding: 10px 0;
+}
+.label-table-cell{
+    display: table-cell;
+    padding: 0 30px;
+}
+.input-table-cell{
+    display: table-cell;
+    padding: 0 25px;
+}
+.password-input-styling{
+    padding: 0 5px;
 }
 
 #view{
     text-align: center;
+    
 }
 ul#list-inline li{
     display: inline;  
+    
 }
 .list{
     scroll-behavior: smooth;
@@ -38,6 +59,7 @@ ul#list-inline li{
     color: black;
     padding: 20px;
     font-weight: bold;
+    z-index: 1051;
 }
 .map{
     scroll-behavior: smooth;
@@ -45,6 +67,7 @@ ul#list-inline li{
     color: black;
     padding: 20px;
     font-weight: bold;
+    z-index: 1051;
 }
 
 .row-flexing{
@@ -60,6 +83,9 @@ ul#list-inline li{
     width: 40%;
     background-color: lightgrey;
 }
+#list-view:hover{
+    background-color: rosybrown;
+}
 #taj-view{
     display: flex;
     flex-direction: row;
@@ -68,12 +94,13 @@ ul#list-inline li{
     width: 40%;
     background-color: lightgrey;
 }
+#taj-view:hover{
+    background-color: rosybrown;
+}
 .text-padding{
     padding-left: 20px;
 }
-#map-view{
-    display: none;
-}
+
 .radisson{
     text-decoration: none;
     color: black;
@@ -84,20 +111,22 @@ ul#list-inline li{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 22px;
+    padding: 10px 22px;
     background-color: rosybrown;
     position: sticky;
     bottom: 0;
+    z-index: 1051;
 }
 
-.contactus{
-    text-decoration: none;
-    color: black;
+.contact-us-mb-3{
+    display: inline-table;
 }
-
-#contact-us{
-    order: 1;
-    margin-left: 1%;
+.contact-us-label{
+    display: table-cell;
+}
+.contact-us-input{
+    display: table-cell;
+    padding-left: 10px;
 }
 
 #social-media{

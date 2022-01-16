@@ -13,17 +13,36 @@ html, body{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1051;
 }
 .logo{
     margin-top: 5px;
     padding-left: 1%;
 }
-.login{
+#log-in-button{
     float: right;
-    margin-right: 2%;
-    padding: 25px;
-    text-decoration: none;
+    margin: 15px;
+    background-color: white;
     color: black;
+    border-color: white;
+}
+#modal-centering{
+    padding: 0 30px;
+}
+.login-mb-3{
+    display: inline-table;
+    padding: 10px 0;
+}
+.label-table-cell{
+    display: table-cell;
+    padding: 0 30px;
+}
+.input-table-cell{
+    display: table-cell;
+    padding: 0 25px;
+}
+.password-input-styling{
+    padding: 0 5px;
 }
 
 #form-flexbox{
@@ -50,7 +69,7 @@ html, body{
  }
 .flex-outer li{
     display: flex;
-    padding: 10px 20px 10px 0px;
+    padding: 5px 20px 0px 0px;
 }
 .flex-outer > li > label{
     flex: 1 0 120px;
@@ -62,13 +81,8 @@ html, body{
 #button-position{
     display: flex;
     justify-content: center;
-    padding-left: 50px;
-    
+    padding-left: 80px;
 }
-.button-style{
-    padding: 7px;
-}
-
 
 #description{
     margin: 1% 4% 2% 4%;
@@ -83,19 +97,23 @@ html, body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 22px;
+    padding: 10px 22px;
     background-color: rosybrown;
     position: sticky;
     bottom: 0;
+    z-index: 1051;
 }
-.contactus{
-    text-decoration: none;
-    color: black;
+.contact-us-mb-3{
+    display: inline-table;
 }
-#contact-us{
-    order: 1;
-    margin-left: 1%;
+.contact-us-label{
+    display: table-cell;
 }
+.contact-us-input{
+    display: table-cell;
+    padding-left: 10px;
+}
+
 #social-media{
     order: 3;
 }

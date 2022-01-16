@@ -10,27 +10,47 @@ html, body{
     justify-content: space-between;
     background-color: rosybrown;
     overflow: hidden;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1051;
 }
 .logo{
     margin-top: 5px;
     margin-left: 1%;
 }
-.login{
+
+#log-in-button{
     float: right;
-    margin-right: 2%;
-    padding: 25px;
-    text-decoration: none;
+    margin: 15px;
+    background-color: white;
     color: black;
+    border-color: white;
 }
+#modal-centering{
+    padding: 0 30px;
+}
+.login-mb-3{
+    display: inline-table;
+    padding: 10px 0;
+}
+.label-table-cell{
+    display: table-cell;
+    padding: 0 30px;
+}
+.input-table-cell{
+    display: table-cell;
+    padding: 0 25px;
+}
+.password-input-styling{
+    padding: 0 5px;
+}
+
 #body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-top: 63px;
-    margin-bottom: 75px;
+    margin-bottom: 65px;
 }
 
 header{
@@ -42,9 +62,9 @@ header{
 }
 
 .searchbar{
-    position: relative;
+    position: absolute;
     width: 30%;
-    top: 50%;
+    top: 40%;
     left: 36%;
     border: 1px solid #f1f1f1;
     outline: none;
@@ -105,12 +125,6 @@ header{
 
 #centering-view-more{
     text-align: center;
-    padding-bottom: 40px;
-}
-
-#view-more{
-    text-decoration: none;
-    color: black;
 }
 
 #footer{
@@ -118,21 +132,23 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 22px;
+    padding: 10px 22px;
     background-color: rosybrown;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
+    z-index: 1051;
 }
 
-.contactus{
-    text-decoration: none;
-    color: black;
+.contact-us-mb-3{
+    display: inline-table;
 }
-
-#contact-us{
-    order: 1;
-    margin-left: 1%;
+.contact-us-label{
+    display: table-cell;
+}
+.contact-us-input{
+    display: table-cell;
+    padding-left: 10px;
 }
 
 #social-media{
