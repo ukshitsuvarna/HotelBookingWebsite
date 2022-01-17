@@ -93,6 +93,9 @@ ul#list-inline li{
     color: black;
 }
 
+.checked{
+    color: orange;
+}
 
 #footer{
     display: flex;
