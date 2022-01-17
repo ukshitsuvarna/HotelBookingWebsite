@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>List</title>
         <link rel="stylesheet" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\styles\list.css">
         <link rel="stylesheet" href="C:\Users\Ukshit S\Desktop\WebDevelopmentProject\styles\fontstyle.css">
@@ -61,22 +63,19 @@
     </div>
     
     <div id="view">
-        <ul id="list-inline">
-            <li>
-                <a class="list" id="modal-collapse-list" href="#list-view" target="_self">
-                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#collapse-list" id="list-view-button" aria-expanded="true">List View</button>
-                </a>
+        <ul id="list-inline" class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#hotel-view" target="_self">List View</a>
             </li>
-            <li>
-                <a class="map" id="modal-collapse-map" href="#map-view" target="_self">
-                    <button type="button" class="btn btn-info collapsed" data-toggle="collapse" data-target="#collapse-map" id="map-view-button" aria-expanded="false">Map View</button>
-                </a>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#map-view" target="_self">Map View</a>
             </li>
         </ul>
     </div>
 
     <div id="body">
-        <div class="collapse show" id="collapse-list">
+        <div class="tab-content" id="pills-tab-content">
+        <div id="hotel-view" class="tab-pane fade show active">
         <div class="row-flexing">
             <div id="list-view">
                 <div>
@@ -118,10 +117,9 @@
         </div>
         </div>
 
-        <div class="collapse" id="collapse-map">
-        <div id="map-view">
+        
+        <div id="map-view" class="tab-pane fade">
             <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="map">
-            <p>MAP VIEW</p>
         </div>
         </div>
     

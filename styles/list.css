@@ -46,28 +46,16 @@ html, body{
 }
 
 #view{
-    text-align: center;
-    
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px 0px;
 }
 ul#list-inline li{
     display: inline;  
-    
 }
-.list{
-    scroll-behavior: smooth;
-    text-decoration: none;
+.nav-link{
     color: black;
-    padding: 20px;
     font-weight: bold;
-    z-index: 1051;
-}
-.map{
-    scroll-behavior: smooth;
-    text-decoration: none;
-    color: black;
-    padding: 20px;
-    font-weight: bold;
-    z-index: 1051;
 }
 
 .row-flexing{
@@ -79,7 +67,7 @@ ul#list-inline li{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 10px;
+    margin: 50px 10px 0px 10px;
     width: 40%;
     background-color: lightgrey;
 }
@@ -90,7 +78,7 @@ ul#list-inline li{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 35px 65px 80px;
+    margin: 55px 65px 80px;
     width: 40%;
     background-color: lightgrey;
 }
@@ -100,11 +88,11 @@ ul#list-inline li{
 .text-padding{
     padding-left: 20px;
 }
-
 .radisson{
     text-decoration: none;
     color: black;
 }
+
 
 #footer{
     display: flex;
